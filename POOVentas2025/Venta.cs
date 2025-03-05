@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POOVentas2025
+﻿namespace POOVentas2025
 {
     public class Venta
     {
@@ -13,7 +7,7 @@ namespace POOVentas2025
         public Pago FormaPago { get; set; }
         public decimal TotalConIntereses { get; set; }
 
-        //Lista de las limonadas
+        //Lista del puesto de limonadas
         public List<Limonada> productos { get; set; } = new List<Limonada>();
 
         //Constructor
@@ -33,12 +27,13 @@ namespace POOVentas2025
             //El foreach es para ver la lista de productos
             foreach (Limonada producto in productos)
             {
-                /
+                
                 total += producto.Precio * producto.Cantidad;
                 Console.WriteLine($"{producto.Nombre}:{producto.Cantidad}unidades x${producto.Precio}=${producto.Cantidad * producto.Precio}");
 
 
             }
+
             //Es el monto total y el total con los intereses agregados
             MontoTotal = total;
             TotalConIntereses = total + (total * FormaPago.Interes);

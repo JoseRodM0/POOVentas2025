@@ -30,6 +30,23 @@ namespace POOVentas2025
             Total = 0;
             Total = Precio * Cantidad;
         }
+
+        public class LimonadaDeLimon : Limonada
+        {
+            public LimonadaDeLimon() : base("Limonada de Limón", 20.00m) { }
+        }
+
+        public class LimonadaDeFresa : Limonada
+        {
+            public LimonadaDeFresa() : base("Limonada de Fresa", 25.00m) { }
+        }
+
+        public class Uvola : Limonada
+        {
+            public Uvola() : base("Limonada de Uvola", 30.00m) { }
+        }
+
+
         //Retorna el total
         public decimal CalcularTotal()
         {

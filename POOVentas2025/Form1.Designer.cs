@@ -58,7 +58,7 @@
             // lblCliente
             // 
             lblCliente.AutoSize = true;
-            lblCliente.Location = new Point(41, 13);
+            lblCliente.Location = new Point(41, 18);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(44, 15);
             lblCliente.TabIndex = 0;
@@ -68,7 +68,7 @@
             // lblLimonadaLimon
             // 
             lblLimonadaLimon.AutoSize = true;
-            lblLimonadaLimon.Location = new Point(47, 60);
+            lblLimonadaLimon.Location = new Point(413, 21);
             lblLimonadaLimon.Name = "lblLimonadaLimon";
             lblLimonadaLimon.Size = new Size(113, 15);
             lblLimonadaLimon.TabIndex = 1;
@@ -77,7 +77,7 @@
             // lblLimonadaFresa
             // 
             lblLimonadaFresa.AutoSize = true;
-            lblLimonadaFresa.Location = new Point(47, 104);
+            lblLimonadaFresa.Location = new Point(413, 65);
             lblLimonadaFresa.Name = "lblLimonadaFresa";
             lblLimonadaFresa.Size = new Size(106, 15);
             lblLimonadaFresa.TabIndex = 2;
@@ -86,7 +86,7 @@
             // lblUvola
             // 
             lblUvola.AutoSize = true;
-            lblUvola.Location = new Point(47, 148);
+            lblUvola.Location = new Point(413, 109);
             lblUvola.Name = "lblUvola";
             lblUvola.Size = new Size(37, 15);
             lblUvola.TabIndex = 3;
@@ -94,14 +94,14 @@
             // 
             // TxtCliente
             // 
-            TxtCliente.Location = new Point(175, 13);
+            TxtCliente.Location = new Point(91, 13);
             TxtCliente.Name = "TxtCliente";
-            TxtCliente.Size = new Size(100, 23);
+            TxtCliente.Size = new Size(316, 23);
             TxtCliente.TabIndex = 4;
             // 
             // txtLimonadaLimon
             // 
-            txtLimonadaLimon.Location = new Point(175, 57);
+            txtLimonadaLimon.Location = new Point(541, 18);
             txtLimonadaLimon.Name = "txtLimonadaLimon";
             txtLimonadaLimon.Size = new Size(100, 23);
             txtLimonadaLimon.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             // txtLimonadaFresa
             // 
-            txtLimonadaFresa.Location = new Point(175, 96);
+            txtLimonadaFresa.Location = new Point(541, 57);
             txtLimonadaFresa.Name = "txtLimonadaFresa";
             txtLimonadaFresa.Size = new Size(100, 23);
             txtLimonadaFresa.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             // txtUvola
             // 
-            txtUvola.Location = new Point(175, 138);
+            txtUvola.Location = new Point(541, 99);
             txtUvola.Name = "txtUvola";
             txtUvola.Size = new Size(100, 23);
             txtUvola.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             // txtPrecioLimonadaLimon
             // 
-            txtPrecioLimonadaLimon.Location = new Point(303, 57);
+            txtPrecioLimonadaLimon.Location = new Point(669, 18);
             txtPrecioLimonadaLimon.Name = "txtPrecioLimonadaLimon";
             txtPrecioLimonadaLimon.Size = new Size(100, 23);
             txtPrecioLimonadaLimon.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             // txtPrecioLimonadaFresa
             // 
-            txtPrecioLimonadaFresa.Location = new Point(303, 96);
+            txtPrecioLimonadaFresa.Location = new Point(669, 57);
             txtPrecioLimonadaFresa.Name = "txtPrecioLimonadaFresa";
             txtPrecioLimonadaFresa.Size = new Size(100, 23);
             txtPrecioLimonadaFresa.TabIndex = 9;
@@ -147,7 +147,7 @@
             // 
             // txtPrecioUvola
             // 
-            txtPrecioUvola.Location = new Point(303, 138);
+            txtPrecioUvola.Location = new Point(669, 99);
             txtPrecioUvola.Name = "txtPrecioUvola";
             txtPrecioUvola.Size = new Size(100, 23);
             txtPrecioUvola.TabIndex = 10;
@@ -157,7 +157,7 @@
             // lblTotal
             // 
             lblTotal.AutoSize = true;
-            lblTotal.Location = new Point(123, 217);
+            lblTotal.Location = new Point(489, 154);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(33, 15);
             lblTotal.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(175, 214);
+            txtTotal.Location = new Point(541, 151);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(100, 23);
             txtTotal.TabIndex = 12;
@@ -174,7 +174,7 @@
             // rbtnContado
             // 
             rbtnContado.AutoSize = true;
-            rbtnContado.Location = new Point(12, 213);
+            rbtnContado.Location = new Point(140, 73);
             rbtnContado.Name = "rbtnContado";
             rbtnContado.Size = new Size(71, 19);
             rbtnContado.TabIndex = 13;
@@ -185,7 +185,7 @@
             // rbtnCredito
             // 
             rbtnCredito.AutoSize = true;
-            rbtnCredito.Location = new Point(12, 243);
+            rbtnCredito.Location = new Point(140, 103);
             rbtnCredito.Name = "rbtnCredito";
             rbtnCredito.Size = new Size(64, 19);
             rbtnCredito.TabIndex = 14;
@@ -195,7 +195,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(175, 265);
+            btnAgregar.Location = new Point(239, 73);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(100, 23);
             btnAgregar.TabIndex = 15;
@@ -204,7 +204,7 @@
             // 
             // btnRestaurar
             // 
-            btnRestaurar.Location = new Point(303, 265);
+            btnRestaurar.Location = new Point(239, 109);
             btnRestaurar.Name = "btnRestaurar";
             btnRestaurar.Size = new Size(100, 23);
             btnRestaurar.TabIndex = 16;
@@ -213,12 +213,13 @@
             // 
             // DgvLimonada
             // 
+            DgvLimonada.AllowUserToOrderColumns = true;
             DgvLimonada.BackgroundColor = SystemColors.GradientInactiveCaption;
             DgvLimonada.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgvLimonada.Columns.AddRange(new DataGridViewColumn[] { Cliente, Limon, Fresa, Uvola, Total, TipoPago });
-            DgvLimonada.Location = new Point(439, 13);
+            DgvLimonada.Location = new Point(41, 216);
             DgvLimonada.Name = "DgvLimonada";
-            DgvLimonada.Size = new Size(642, 275);
+            DgvLimonada.Size = new Size(641, 275);
             DgvLimonada.TabIndex = 17;
             DgvLimonada.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -256,7 +257,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1092, 320);
+            ClientSize = new Size(802, 525);
             Controls.Add(DgvLimonada);
             Controls.Add(btnRestaurar);
             Controls.Add(btnAgregar);
