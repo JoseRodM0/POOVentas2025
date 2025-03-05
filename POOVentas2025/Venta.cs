@@ -2,6 +2,10 @@
 {
     public class Venta
     {
+        private string cliente;
+        private Limonada limonadaSeleccionada;
+        private bool esCredito;
+
         //Propiedades
         public decimal MontoTotal { get; set; }
         public Pago FormaPago { get; set; }
@@ -9,13 +13,21 @@
 
         //Lista del puesto de limonadas
         public List<Limonada> productos { get; set; } = new List<Limonada>();
+        public decimal Total { get; internal set; }
 
         //Constructor
-        public Venta(Pago pago)
+        public Venta(string cliente, Limonada limonadaSeleccionada, Pago pago)
         {
             MontoTotal = 0;
             FormaPago = pago;
             TotalConIntereses = 0;
+        }
+
+        public Venta(string cliente, Limonada limonadaSeleccionada, bool esCredito)
+        {
+            this.cliente = cliente;
+            this.limonadaSeleccionada = limonadaSeleccionada;
+            this.esCredito = esCredito;
         }
 
         //Método total con intereses

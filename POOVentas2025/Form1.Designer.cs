@@ -63,7 +63,7 @@
             lblCliente.Size = new Size(44, 15);
             lblCliente.TabIndex = 0;
             lblCliente.Text = "Cliente";
-            lblCliente.Click += label1_Click;
+            lblCliente.Click += lblCliente_Click;
             // 
             // lblLimonadaLimon
             // 

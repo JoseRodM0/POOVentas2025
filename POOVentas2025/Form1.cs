@@ -5,7 +5,11 @@ namespace POOVentas2025
 
         public partial class Form1 : Form
         {
-            public Form1()
+        private object txtCliente;
+        private object comboBoxLimonada;
+        private object radioCredito;
+
+        public Form1()
             {
                 InitializeComponent();
             }
@@ -24,40 +28,40 @@ namespace POOVentas2025
             private void btnCalcular_Click(object sender, EventArgs e)
             {
                 // Validar que el nombre del cliente no esté vacío
-                if (string.IsNullOrEmpty(txtCliente.Text))
+                if (string.IsNullOrEmpty((string?)txtCliente))
                 {
                     MessageBox.Show("Por favor ingrese el nombre del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 // Validar que se haya seleccionado una limonada
-                if (comboBoxLimonada.SelectedItem == null)
+                if ((string)comboBoxLimonada == null)
                 {
                     MessageBox.Show("Por favor seleccione una limonada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 // Obtener la información del cliente
-                string cliente = txtCliente.Text;
+                string cliente = (string)txtCliente;
 
                 // Obtener la limonada seleccionada
-                Limonada limonadaSeleccionada = (Limonada)comboBoxLimonada.SelectedItem;
+                Limonada limonadaSeleccionada = comboBoxLimonada.SelectedItem as Limonada;
 
-                // Verificar si es crédito o contado
-                bool esCredito = radioCredito.Checked;
+            // Verificar si es crédito o contado
+            bool esCredito = radioCredito.Checked;
 
                 // Crear la venta
-                Venta venta = new Venta(cliente, limonadaSeleccionada, esCredito);
+                Venta venta = new(cliente, limonadaSeleccionada, esCredito);
 
-                // Crear el objeto Pago para calcular el total a pagar
-                Pago pago = new Pago(venta.Total, esCredito);
+            // Mostrar los resultados
+            lblTotal.Text = $"Total: {venta.Total:C}";
 
-                // Mostrar los resultados
-                lblTotal.Text = $"Total: {venta.Total:C}";
-                lblTotalPago.Text = $"Total de Pago: {pago.TotalPago:C}";
+            // Crear el objeto Pago para calcular el total a pagar
+            Pago pago = new Pago(venta.Total, esCredito);
+            lblTotalPago.Text = $"Total de Pago: {pago.TotalPago:C}";
 
-                // Mostrar los detalles del pago en un MessageBox (opcional)
-                MessageBox.Show(pago.ObtenerDetallePago(), "Detalles del Pago", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Mostrar los detalles del pago en un MessageBox (opcional)
+            MessageBox.Show(pago.ObtenerDetallePago(), "Detalles del Pago", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

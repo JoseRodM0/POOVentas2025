@@ -10,6 +10,7 @@ namespace POOVentas2025
     {
         public decimal Monto { get; set; }
         public decimal Interes { get; set; }
+        public object TotalPago { get; internal set; }
 
         public Pago(decimal monto, decimal interes)
         {
