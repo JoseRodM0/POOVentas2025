@@ -36,4 +36,6 @@ namespace POOVentas2025
             return Total = Precio * Cantidad;
         }
     }
+
+
 }

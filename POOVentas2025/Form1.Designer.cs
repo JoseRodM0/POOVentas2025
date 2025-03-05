@@ -46,6 +46,12 @@
             btnAgregar = new Button();
             btnRestaurar = new Button();
             DgvLimonada = new DataGridView();
+            Cliente = new DataGridViewTextBoxColumn();
+            Limon = new DataGridViewTextBoxColumn();
+            Fresa = new DataGridViewTextBoxColumn();
+            Uvola = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
+            TipoPago = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)DgvLimonada).BeginInit();
             SuspendLayout();
             // 
@@ -207,18 +213,50 @@
             // 
             // DgvLimonada
             // 
+            DgvLimonada.BackgroundColor = SystemColors.GradientInactiveCaption;
             DgvLimonada.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvLimonada.Columns.AddRange(new DataGridViewColumn[] { Cliente, Limon, Fresa, Uvola, Total, TipoPago });
             DgvLimonada.Location = new Point(439, 13);
             DgvLimonada.Name = "DgvLimonada";
-            DgvLimonada.Size = new Size(331, 275);
+            DgvLimonada.Size = new Size(642, 275);
             DgvLimonada.TabIndex = 17;
             DgvLimonada.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Cliente
+            // 
+            Cliente.HeaderText = "Cliente";
+            Cliente.Name = "Cliente";
+            // 
+            // Limon
+            // 
+            Limon.HeaderText = "Limon";
+            Limon.Name = "Limon";
+            // 
+            // Fresa
+            // 
+            Fresa.HeaderText = "Fresa";
+            Fresa.Name = "Fresa";
+            // 
+            // Uvola
+            // 
+            Uvola.HeaderText = "Uvola";
+            Uvola.Name = "Uvola";
+            // 
+            // Total
+            // 
+            Total.HeaderText = "Total";
+            Total.Name = "Total";
+            // 
+            // TipoPago
+            // 
+            TipoPago.HeaderText = "Tipo de pago";
+            TipoPago.Name = "TipoPago";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1092, 320);
             Controls.Add(DgvLimonada);
             Controls.Add(btnRestaurar);
             Controls.Add(btnAgregar);
@@ -265,5 +303,11 @@
         private Button btnAgregar;
         private Button btnRestaurar;
         private DataGridView DgvLimonada;
+        private DataGridViewTextBoxColumn Cliente;
+        private DataGridViewTextBoxColumn Limon;
+        private DataGridViewTextBoxColumn Fresa;
+        private DataGridViewTextBoxColumn Uvola;
+        private DataGridViewTextBoxColumn Total;
+        private DataGridViewTextBoxColumn TipoPago;
     }
 }

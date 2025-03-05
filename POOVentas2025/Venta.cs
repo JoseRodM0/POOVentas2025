@@ -24,25 +24,22 @@ namespace POOVentas2025
             TotalConIntereses = 0;
         }
 
-        //Método de ClacularTotal que devuelve el total con intereses
+        //Método total con intereses
         public decimal CalcularTotal()
         {
             decimal total = 0;
 
 
-            //El foreach ayuda a recorrer la lista de productos
+            //El foreach es para ver la lista de productos
             foreach (Limonada producto in productos)
             {
-                //Usé el Console.WriteLine para el nombre, cantidad, precio y total del producto
-                //Los signos $, se muestra el precio y el total del producto
-                //Se puso las unidades x$ para que se muestre el precio por la cantidad del producto
-                //Los: se realciona con el nombre del producto y la cantidad
+                /
                 total += producto.Precio * producto.Cantidad;
                 Console.WriteLine($"{producto.Nombre}:{producto.Cantidad}unidades x${producto.Precio}=${producto.Cantidad * producto.Precio}");
 
 
             }
-            //Esel monto total y el total con intereses
+            //Es el monto total y el total con los intereses agregados
             MontoTotal = total;
             TotalConIntereses = total + (total * FormaPago.Interes);
             return TotalConIntereses;
