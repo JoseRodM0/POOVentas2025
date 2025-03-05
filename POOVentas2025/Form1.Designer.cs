@@ -1,0 +1,269 @@
+﻿namespace POOVentas2025
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblCliente = new Label();
+            lblLimonadaLimon = new Label();
+            lblLimonadaFresa = new Label();
+            lblUvola = new Label();
+            TxtCliente = new TextBox();
+            txtLimonadaLimon = new TextBox();
+            txtLimonadaFresa = new TextBox();
+            txtUvola = new TextBox();
+            txtPrecioLimonadaLimon = new TextBox();
+            txtPrecioLimonadaFresa = new TextBox();
+            txtPrecioUvola = new TextBox();
+            lblTotal = new Label();
+            txtTotal = new TextBox();
+            rbtnContado = new RadioButton();
+            rbtnCredito = new RadioButton();
+            btnAgregar = new Button();
+            btnRestaurar = new Button();
+            DgvLimonada = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)DgvLimonada).BeginInit();
+            SuspendLayout();
+            // 
+            // lblCliente
+            // 
+            lblCliente.AutoSize = true;
+            lblCliente.Location = new Point(41, 13);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(44, 15);
+            lblCliente.TabIndex = 0;
+            lblCliente.Text = "Cliente";
+            lblCliente.Click += label1_Click;
+            // 
+            // lblLimonadaLimon
+            // 
+            lblLimonadaLimon.AutoSize = true;
+            lblLimonadaLimon.Location = new Point(47, 60);
+            lblLimonadaLimon.Name = "lblLimonadaLimon";
+            lblLimonadaLimon.Size = new Size(113, 15);
+            lblLimonadaLimon.TabIndex = 1;
+            lblLimonadaLimon.Text = "Limonada de Limon";
+            // 
+            // lblLimonadaFresa
+            // 
+            lblLimonadaFresa.AutoSize = true;
+            lblLimonadaFresa.Location = new Point(47, 104);
+            lblLimonadaFresa.Name = "lblLimonadaFresa";
+            lblLimonadaFresa.Size = new Size(106, 15);
+            lblLimonadaFresa.TabIndex = 2;
+            lblLimonadaFresa.Text = "Limonada de Fresa";
+            // 
+            // lblUvola
+            // 
+            lblUvola.AutoSize = true;
+            lblUvola.Location = new Point(47, 148);
+            lblUvola.Name = "lblUvola";
+            lblUvola.Size = new Size(37, 15);
+            lblUvola.TabIndex = 3;
+            lblUvola.Text = "Uvola";
+            // 
+            // TxtCliente
+            // 
+            TxtCliente.Location = new Point(175, 13);
+            TxtCliente.Name = "TxtCliente";
+            TxtCliente.Size = new Size(100, 23);
+            TxtCliente.TabIndex = 4;
+            // 
+            // txtLimonadaLimon
+            // 
+            txtLimonadaLimon.Location = new Point(175, 57);
+            txtLimonadaLimon.Name = "txtLimonadaLimon";
+            txtLimonadaLimon.Size = new Size(100, 23);
+            txtLimonadaLimon.TabIndex = 5;
+            txtLimonadaLimon.Text = "0";
+            txtLimonadaLimon.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtLimonadaFresa
+            // 
+            txtLimonadaFresa.Location = new Point(175, 96);
+            txtLimonadaFresa.Name = "txtLimonadaFresa";
+            txtLimonadaFresa.Size = new Size(100, 23);
+            txtLimonadaFresa.TabIndex = 6;
+            txtLimonadaFresa.Text = "0";
+            txtLimonadaFresa.TextAlign = HorizontalAlignment.Center;
+            txtLimonadaFresa.TextChanged += textBox1_TextChanged;
+            // 
+            // txtUvola
+            // 
+            txtUvola.Location = new Point(175, 138);
+            txtUvola.Name = "txtUvola";
+            txtUvola.Size = new Size(100, 23);
+            txtUvola.TabIndex = 7;
+            txtUvola.Text = "0";
+            txtUvola.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtPrecioLimonadaLimon
+            // 
+            txtPrecioLimonadaLimon.Location = new Point(303, 57);
+            txtPrecioLimonadaLimon.Name = "txtPrecioLimonadaLimon";
+            txtPrecioLimonadaLimon.Size = new Size(100, 23);
+            txtPrecioLimonadaLimon.TabIndex = 8;
+            txtPrecioLimonadaLimon.Text = "0.00";
+            txtPrecioLimonadaLimon.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtPrecioLimonadaFresa
+            // 
+            txtPrecioLimonadaFresa.Location = new Point(303, 96);
+            txtPrecioLimonadaFresa.Name = "txtPrecioLimonadaFresa";
+            txtPrecioLimonadaFresa.Size = new Size(100, 23);
+            txtPrecioLimonadaFresa.TabIndex = 9;
+            txtPrecioLimonadaFresa.Text = "0.00";
+            txtPrecioLimonadaFresa.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtPrecioUvola
+            // 
+            txtPrecioUvola.Location = new Point(303, 138);
+            txtPrecioUvola.Name = "txtPrecioUvola";
+            txtPrecioUvola.Size = new Size(100, 23);
+            txtPrecioUvola.TabIndex = 10;
+            txtPrecioUvola.Text = "0.00";
+            txtPrecioUvola.TextAlign = HorizontalAlignment.Center;
+            // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Location = new Point(123, 217);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(33, 15);
+            lblTotal.TabIndex = 11;
+            lblTotal.Text = "Total";
+            lblTotal.Click += label1_Click_1;
+            // 
+            // txtTotal
+            // 
+            txtTotal.Location = new Point(175, 214);
+            txtTotal.Name = "txtTotal";
+            txtTotal.Size = new Size(100, 23);
+            txtTotal.TabIndex = 12;
+            // 
+            // rbtnContado
+            // 
+            rbtnContado.AutoSize = true;
+            rbtnContado.Location = new Point(12, 213);
+            rbtnContado.Name = "rbtnContado";
+            rbtnContado.Size = new Size(71, 19);
+            rbtnContado.TabIndex = 13;
+            rbtnContado.TabStop = true;
+            rbtnContado.Text = "Contado";
+            rbtnContado.UseVisualStyleBackColor = true;
+            // 
+            // rbtnCredito
+            // 
+            rbtnCredito.AutoSize = true;
+            rbtnCredito.Location = new Point(12, 243);
+            rbtnCredito.Name = "rbtnCredito";
+            rbtnCredito.Size = new Size(64, 19);
+            rbtnCredito.TabIndex = 14;
+            rbtnCredito.TabStop = true;
+            rbtnCredito.Text = "Credito";
+            rbtnCredito.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new Point(175, 265);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(100, 23);
+            btnAgregar.TabIndex = 15;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // btnRestaurar
+            // 
+            btnRestaurar.Location = new Point(303, 265);
+            btnRestaurar.Name = "btnRestaurar";
+            btnRestaurar.Size = new Size(100, 23);
+            btnRestaurar.TabIndex = 16;
+            btnRestaurar.Text = "Restaurar";
+            btnRestaurar.UseVisualStyleBackColor = true;
+            // 
+            // DgvLimonada
+            // 
+            DgvLimonada.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvLimonada.Location = new Point(439, 13);
+            DgvLimonada.Name = "DgvLimonada";
+            DgvLimonada.Size = new Size(331, 275);
+            DgvLimonada.TabIndex = 17;
+            DgvLimonada.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(DgvLimonada);
+            Controls.Add(btnRestaurar);
+            Controls.Add(btnAgregar);
+            Controls.Add(rbtnCredito);
+            Controls.Add(rbtnContado);
+            Controls.Add(txtTotal);
+            Controls.Add(lblTotal);
+            Controls.Add(txtPrecioUvola);
+            Controls.Add(txtPrecioLimonadaFresa);
+            Controls.Add(txtPrecioLimonadaLimon);
+            Controls.Add(txtUvola);
+            Controls.Add(txtLimonadaFresa);
+            Controls.Add(txtLimonadaLimon);
+            Controls.Add(TxtCliente);
+            Controls.Add(lblUvola);
+            Controls.Add(lblLimonadaFresa);
+            Controls.Add(lblLimonadaLimon);
+            Controls.Add(lblCliente);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)DgvLimonada).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblCliente;
+        private Label lblLimonadaLimon;
+        private Label lblLimonadaFresa;
+        private Label lblUvola;
+        private TextBox TxtCliente;
+        private TextBox txtLimonadaLimon;
+        private TextBox txtLimonadaFresa;
+        private TextBox txtUvola;
+        private TextBox txtPrecioLimonadaLimon;
+        private TextBox txtPrecioLimonadaFresa;
+        private TextBox txtPrecioUvola;
+        private Label lblTotal;
+        private TextBox txtTotal;
+        private RadioButton rbtnContado;
+        private RadioButton rbtnCredito;
+        private Button btnAgregar;
+        private Button btnRestaurar;
+        private DataGridView DgvLimonada;
+    }
+}
